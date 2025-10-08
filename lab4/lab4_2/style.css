@@ -21,19 +21,19 @@ h2.instruction-highlighted {
     font-style: italic;
 }
 
-.sub {
+.instruction-sub {
     vertical-align: sub;
 }
 
-.sup {
+.instruction-sup {
     vertical-align: super;
 }
 
-.strikethrough {
+.instruction-strikethrough {
     text-decoration: line-through;
 }
 
-.underscore {
+.instruction-underscore {
     text-decoration: underline;
 }
 
@@ -41,12 +41,12 @@ h2.instruction-highlighted {
     background-color: yellow;
 }
 
-#italic-special-text {
+#instruction-italic-special-text {
     font-family: "Lucida Console", "Courier New", monospace;
     font-style: italic;
 }
 
-hr.break-line {
+hr.instruction-break-line {
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
