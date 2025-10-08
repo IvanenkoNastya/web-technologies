@@ -46,7 +46,6 @@ div.bold > p {
 }
 
 /*9*/
-/*no class "text-bold" in html but there is class "bold", so...*/
 div.bold > section > p {
     line-height: 45px;
 }

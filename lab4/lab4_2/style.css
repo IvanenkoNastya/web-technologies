@@ -1,4 +1,5 @@
-* {
+
+.instruction {
     text-align: center;
     font-size: 14px;
 }
@@ -8,19 +9,15 @@ h1 {
     color: red;
 }
 
-/*h2 {
-    font-style: italic;
-}*/
-
-.list-none {
+.instruction-list-none {
     list-style-type: none;
 }
 
-.highlighted {
+.instruction-highlighted {
     font-weight: bold;
 }
 
-h2.highlighted {
+h2.instruction-highlighted {
     font-style: italic;
 }
 
@@ -40,16 +37,16 @@ h2.highlighted {
     text-decoration: underline;
 }
 
-.bg-yellow {
+.instruction-bg-highlighted {
     background-color: yellow;
 }
 
-#italic-special {
+#italic-special-text {
     font-family: "Lucida Console", "Courier New", monospace;
     font-style: italic;
 }
 
-.break-line {
+hr.break-line {
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
