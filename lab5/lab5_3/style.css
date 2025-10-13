@@ -147,7 +147,7 @@ form option:hover {
 }
 
 form option:checked {
-    background-color: #83B6EB;
+    background: linear-gradient(#83B6EB, #83B6EB);
 }
 
 form button {
