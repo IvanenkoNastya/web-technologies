@@ -27,10 +27,38 @@ td, th {
     background-color: #B8DBFF;
 }
 
-th {
-    color: white;
+tr:nth-child(even) td {
+    background-color: #DBECFF;
+}
+
+thead th {
+    font-weight: bold;
+}
+
+thead th:nth-child(1) {
+    background-color: #DBECFF;
+}
+
+thead th:nth-child(2) {
+    background-color: #B8DBFF;
+}
+
+thead th:nth-child(3) {
+    background-color: #83B6EB;
+}
+
+thead th:nth-child(4) {
+    background-color: #508CCC;
+}
+
+thead th:nth-child(5) {
+    background-color: #306EB3;
+}
+
+tbody th {
+    background-color: #13539E;
 }
 
 th {
-    background-color: #1075EB;
+    color: white;
 }
