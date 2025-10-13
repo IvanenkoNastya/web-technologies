@@ -119,18 +119,14 @@ form select {
 }
 
 form select:hover, select:focus {
-
-
+    color: #13539E;
 }
 
 form select {
-
-    accent-color: orangered;
+    color: #508CCC;
 }
 
 form option {
-    accent-color: orangered;
-
     padding: 8px;
 }
 
@@ -146,13 +142,8 @@ option:not(option:last-of-type) {
     border-bottom: none;
 }
 
-
 form option:hover {
     background-color: #DBECFF;
-}
-
-form option:focus {
-    background-color: lightgreen;
 }
 
 form option:checked {
