@@ -5,11 +5,11 @@ body {
     padding: 20px;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 8pt;
+    font-size: 10pt;
 }
 
 main {
-    margin: 0;
+    margin: auto;
     padding: 8px;
     background-color: ghostwhite;
 }
