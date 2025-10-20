@@ -8,6 +8,12 @@ body {
     font-size: 8pt;
 }
 
+main {
+    margin: 0;
+    padding: 8px;
+    background-color: ghostwhite;
+}
+
 .navigation {
     background-color: ghostwhite;
 }
@@ -20,7 +26,7 @@ body {
     margin: 16px;
 
     overflow: hidden;
-    border: 1px solid green;
+    border: 1px solid purple;
     border-radius: 50%;
 }
 
@@ -30,9 +36,8 @@ body {
 }
 
 .navigation-list {
-    /*position: fixed;
-    right: 10px;*/
     float: right;
+    clear: none;
 
     margin: 20px 20px;
     display: inline-block;
@@ -55,5 +60,5 @@ body {
 }
 
 .navigation-item-selected {
-    border: 2px solid purple;
+    border: 1px solid purple;
 }
