@@ -1,0 +1,54 @@
+.block {
+    height: 400px;
+    width: 300px;
+
+    display: inline-block;
+    margin: 35px;
+
+    background-color: lightskyblue;
+}
+
+.block-text {
+    margin: 16px;
+    text-align: center;
+}
+
+.circular-image {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
+
+.block1 {
+    background: linear-gradient(45deg,
+    green 0%,
+    yellow 30%,
+    blue 70%,
+    orange 100%);
+}
+
+.block2 {
+    background: repeating-linear-gradient(0deg, transparent, #4d9f0c 50px),
+    repeating-linear-gradient(0.75turn, transparent, blue 50px),
+    repeating-linear-gradient(0.75turn, red, white 100px),
+    repeating-linear-gradient(0.5turn, transparent, white 0%, yellow 50%, blue 100%);,
+repeating-linear-gradient(0.25 turn, transparent, orange 50 px);
+
+    /*background-image: repeating-linear-gradient(45deg,
+    green 0%,
+    yellow 30%,
+    blue 70%,
+    orange 89%);*/
+}
+
+.block4 {
+    background: linear-gradient(90deg,
+    orange 0%,
+    blue 100%), linear-gradient(0deg,
+    white 0%,
+    yellow 100%),
+    linear-gradient(0deg, transparent, #4d9f0c 50px);
+}
