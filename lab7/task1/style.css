@@ -1,0 +1,42 @@
+.wrapper {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+}
+
+.box {
+    width: 150px;
+    padding: 2% 5%;
+
+    border: 1px solid black;
+
+    text-align: center;
+}
+
+.block-background {
+    position: absolute;
+    top: 200px;
+    left: 270px;
+    z-index: 10;
+
+    background-color: green;
+}
+
+.block-middleground {
+    position: absolute;
+    top: 320px;
+    left: 140px;
+    z-index: 20;
+
+    background-color: royalblue;
+    color: white;
+}
+
+.block-foreground {
+    position: absolute;
+    top: 100px;
+    left: 420px;
+    z-index: 30;
+
+    background-color: lightblue;
+}
+

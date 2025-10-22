@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+
+    background-color: ghostwhite;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+}
+
+.box {
+    padding: 2%;
+    width: 200px;
+
+    border: 1px solid black;
+
+    text-align: center;
+}
+
+.block-house {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+
+    background-color: green;
+}
+
+.block-room {
+    position: absolute;
+    top: 215px;
+    left: 60px;
+    background-color: royalblue;
+    color: white;
+}
+
+.block-article {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    width: 400px;
+
+    background-color: rebeccapurple;
+    color: white;
+}
+
