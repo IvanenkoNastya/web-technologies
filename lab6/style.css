@@ -1,4 +1,4 @@
-body {
+.shell {
     width: 1140px;
 
     margin: auto;
@@ -8,8 +8,8 @@ body {
     font-size: 10pt;
 }
 
-main {
-    margin: auto;
+.main-content {
+    margin: 0 auto;
     padding: 8px;
     background-color: ghostwhite;
 }

@@ -26,8 +26,6 @@
 
 .shadow3 {
     box-shadow: 8px 8px 6px 0.0001px rgba(0, 128, 0, 0.5);
-
-    /*box-shadow: 0px 0px 10px 10px white, 8px 8px 3px 3px green;*/
 }
 
 .shadow4 {
@@ -51,5 +49,4 @@
 .shadow6 {
     box-shadow: 0 -12px 0 -6px green,
     0 12px 0 -6px gold;
-
 }
