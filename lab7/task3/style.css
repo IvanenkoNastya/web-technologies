@@ -1,0 +1,51 @@
+.my-form {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    border: 20px solid #868686;
+    background-image: url("assets/close-up-plant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-form label {
+    color: white;
+}
+
+.my-form label, button {
+    font-size: 18px;
+}
+
+.my-form input, textarea {
+    font-size: 16px;
+    color: black;
+}
+
+.form-header {
+    margin: 20px;
+
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    
+    color: #7d21b3;
+}
+
+
+.form-fieldset {
+    border: 0;
+}
+
+.field-container {
+    display: inline-block;
+}
+
+.form-btn {
+}
+
+.form-buttons {
+}

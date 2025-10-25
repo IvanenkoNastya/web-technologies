@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form class="my-form" method="post" enctype="multipart/form-data">
+    <fieldset class="form-fieldset form-fieldset-header">
+        <div class="form-header">
+            <p>Заповність форму</p>
+        </div>
+    </fieldset>
+    <fieldset class="form-fieldset form-fieldset-login">
+        <div class="field-container">
+            <div>
+                <label for="login">Login</label>
+            </div>
+            <div>
+                <input type="text" required
+                       autocomplete="off"
+                       id="login" name="login">
+            </div>
+        </div>
+
+        <div class="field-container">
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="email" required
+                       autocomplete="off"
+                       pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                       id="email" name="email">
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="form-fieldset form-fieldset-password">
+        <div class="field-container">
+            <div>
+                <label for="password">Password</label>
+            </div>
+            <div>
+                <input type="password" required
+                       autocomplete="off"
+                       pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6}$"
+                       id="password" name="password">
+            </div>
+        </div>
+        <div class="field-container">
+            <div>
+                <label for="confirm_password">Repeat password</label>
+            </div>
+            <div>
+                <input type="password" required
+                       autocomplete="off"
+                       pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6}$"
+                       id="confirm_password" name="confirm_password">
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="form-fieldset form-fieldset-name">
+        <div class="field-container">
+            <div class="field-container">
+                <label for="first_name">First Name</label>
+            </div>
+            <div>
+                <input type="text" required
+                       autocomplete="off"
+                       tabindex="10"
+                       id="first_name" name="first_name">
+            </div>
+        </div>
+        <div class="field-container">
+            <div>
+                <label for="last_name">Last Name</label>
+            </div>
+            <div>
+                <input type="text" required
+                       autocomplete="off"
+                       tabindex="30"
+                       id="last_name" name="last_name">
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="form-fieldset form-fieldset-about-me">
+        <div class="field-container textarea-container">
+            <div>
+                <label for="textarea">About me</label>
+            </div>
+            <div>
+                <textarea rows="2" cols="50" id="textarea" name="textarea"></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="form-fieldset form-fieldset-buttons">
+        <div class="field-container">
+            <button class="form-button" type="reset">Reset</button>
+        </div>
+        <div class="field-container">
+            <button type="submit" formmethod="post">OK</button>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
