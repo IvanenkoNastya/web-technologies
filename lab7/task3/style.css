@@ -65,6 +65,30 @@
     color: red;
 }
 
+.form-fieldset:hover .form-header::before {
+    content: "";
+}
+
+.form-fieldset:hover .form-header p::before {
+    content: "Ми вдячні вам";
+}
+
+.form-fieldset .form-header p::before {
+    content: "Заповність форму";
+}
+
+.form-header:hover p {
+    content: "";
+}
+
+.form-fieldset:hover .form-header::after {
+    content: "________________________";
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    color: lawngreen;
+}
+
 .form-fieldset {
     border: 0;
 }
@@ -192,4 +216,24 @@
     background-color: #a02904;
     border-radius: 25px;
     position: relative;
+}
+
+.reset-button:active::after {
+    background-image: url("assets/reset.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.submit-button:active::after {
+    background-image: url("assets/check-mark.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    content: "";
 }
