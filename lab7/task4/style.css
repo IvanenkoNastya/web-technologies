@@ -1,0 +1,156 @@
+/* general */
+/*
+.navigation {
+    position: relative;
+}*/
+
+.navigation a {
+    font: lighter 16px "Lucida Console", "Courier New", monospace;
+    padding: 20px;
+}
+
+.li-home::before {
+    content: url("assets/home_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.li-about::before {
+    content: url("assets/list_alt_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.li-work::before {
+    content: url("assets/local_cafe_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.li-search::before {
+    content: url("assets/search_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.li-mail::before {
+    content: url("assets/mail_24dp_F3F3F3_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+
+/* horizontal */
+.navigation-horizontal {
+    margin: 0 auto;
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    left: 400px;
+}
+
+.navigation-horizontal li {
+    padding: 10px 10px;
+    margin: 0;
+    display: block;
+    width: 200px;
+    height: 40px;
+}
+
+.navigation-horizontal .level-main > li {
+    display: inline-block;
+}
+
+.navigation-horizontal a {
+    padding: 10px 10px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-horizontal .level-main {
+    position: sticky;
+    clear: both;
+    top: 0;
+    padding: 0;
+}
+
+.navigation-horizontal .level-main > li {
+    vertical-align: top;
+}
+
+.navigation-horizontal .level-main > li:last-child {
+    position: absolute;
+    float: right;
+    margin: 0 5px;
+}
+
+.navigation-horizontal .level-main > li {
+    position: relative;
+}
+
+.navigation-horizontal .level-item {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    padding-inline-start: 0px;
+}
+
+.navigation-horizontal .level-main > li:hover .level-item {
+    visibility: visible;
+}
+
+.navigation-horizontal li {
+    background-color: #555555;
+}
+
+.navigation-horizontal li:hover {
+    background-color: #4CAF50;
+}
+
+
+/* vertical */
+.navigation-vertical {
+    width: fit-content;
+    background-color: #006CB7;
+}
+
+.navigation-vertical .level-main {
+    padding: 0;
+}
+
+.navigation-vertical .level-main > li {
+    height: fit-content;
+    border: 1px solid white;
+}
+
+.navigation-vertical .level-item {
+    display: none;
+}
+
+.navigation-vertical .level-main > li:hover .level-item {
+    display: block;
+}
+
+.navigation-vertical .level-specification {
+    display: none;
+}
+
+.navigation-vertical .level-item > li:hover .level-specification {
+    display: block;
+}
+
+.navigation-vertical li {
+    padding: 10px;
+    list-style: none;
+}
+
+.navigation-vertical a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-vertical li:hover {
+    background-color: cornflowerblue;
+}
+
+.navigation-vertical li li:hover {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+.navigation-vertical li li li:hover {
+    background-color: blueviolet;
+    border-radius: 10px;
+}
