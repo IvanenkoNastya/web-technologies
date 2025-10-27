@@ -1,9 +1,17 @@
 .wrapper {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14pt;
+
+    background-color: ghostwhite;
 }
 
 .box {
+    position: absolute;
     width: 150px;
     padding: 2% 5%;
 
