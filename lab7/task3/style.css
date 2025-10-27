@@ -26,15 +26,44 @@
 
 .form-header {
     margin: 20px;
+    position: relative;
 
     text-align: center;
     font-size: 25px;
     font-weight: 700;
     font-style: italic;
-    
+
     color: #7d21b3;
 }
 
+.form-header:first-letter {
+    font-size: 36px;
+    color: magenta;
+}
+
+.form-header::before {
+    content: "__________";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+}
+
+.form-header::after {
+    content: "__________";
+    position: absolute;
+    top: 0;
+    left: 405px;
+    color: red;
+}
+
+.form-header p::after {
+    content: "________________________";
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    color: red;
+}
 
 .form-fieldset {
     border: 0;
@@ -44,8 +73,123 @@
     display: inline-block;
 }
 
-.form-btn {
+.field-container::after {
+    display: block;
+    content: "";
+    clear: both;
 }
 
-.form-buttons {
+.form-fieldset input, textarea {
+    padding: 0;
+    margin: 0;
+
+    text-indent: 20px;
+    font-weight: 700;
+
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.form-fieldset input {
+    width: 250px;
+    height: 30px;
+    display: block;
+    resize: none;
+    float: left;
+    margin: 0 36px 0 0;
+}
+
+.form-fieldset textarea {
+    width: 540px;
+    height: 46px;
+    resize: none;
+    padding: 5px;
+}
+
+.form-fieldset-buttons .field-container {
+    display: inline-block;
+    float: right;
+    margin: 10px 40px;
+}
+
+.form-button {
+    width: 130px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+}
+
+.form-button {
+    cursor: pointer;
+}
+
+.reset-button {
+    margin-right: 5px;
+
+    border: 3px solid #e64a19;
+    color: #e64a19;
+}
+
+.submit-button {
+    border: 3px solid #0097a7;
+    color: #0097a7;
+}
+
+.field-container label {
+    line-height: 40px;
+}
+
+.form-fieldset-login input:hover, .form-fieldset-name input:hover {
+    box-shadow: inset 0 -4px 0 0 #fbff00;
+}
+
+.form-fieldset-login input:focus, .form-fieldset-name input:focus {
+    box-shadow: inset 0 -4px 0 0 #ffa600;
+}
+
+.form-fieldset-password input:hover {
+    box-shadow: inset 0 -4px 0 0 #1eff00;
+}
+
+.form-fieldset-password input:focus {
+    box-shadow: inset 0 -4px 0 0 #00ffea;
+}
+
+.form-fieldset-about-me textarea:hover {
+    box-shadow: 0 0 10px 10px rgba(233, 27, 154, 0.6);
+}
+
+.form-fieldset-about-me textarea::first-line {
+    color: red;
+}
+
+.submit-button:hover {
+    color: white;
+    background-color: #0097a7;
+    border-radius: 15px
+}
+
+.reset-button:hover {
+    color: white;
+    background-color: #e64a19;
+    border-radius: 15px
+}
+
+.submit-button:active {
+    border: 3px solid #ecfd00;
+    background-color: #014950;
+    border-radius: 25px;
+    position: relative;
+}
+
+.reset-button:active {
+    border: 3px solid #ecfd00;
+    background-color: #a02904;
+    border-radius: 25px;
+    position: relative;
 }
