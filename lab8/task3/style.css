@@ -1,0 +1,127 @@
+:root {
+    --dark-text: rgb(50, 50, 50);
+    --light-text: rgb(150, 150, 150);
+}
+
+.weather-wrapper {
+    width: 700px;
+    margin: 0 auto;
+    padding: 60px;
+
+    font-family: "Montserrat", cursive;
+    font-size: 24px;
+    color: var(--dark-text);
+    background: rgb(250, 250, 250);
+}
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forecast {
+    display: flex;
+    align-items: center;
+}
+
+.header div {
+    margin: 10px;
+}
+
+.current-weather-image {
+
+    width: 90px;
+    height: 90px;
+}
+
+.current-temperature::after {
+    content: "°F";
+    color: var(--light-text);
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.current-data dt {
+    color: var(--light-text);
+}
+
+.current-data dt::after {
+    content: ":";
+    color: var(--light-text);
+}
+
+.current-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.current-data dt {
+    display: inline-block;
+}
+
+.current-data dd {
+    display: inline-block;
+}
+
+/* list */
+.daily-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid var(--light-text);
+}
+
+.daily-weather:last-child {
+    border-bottom: 1px solid var(--light-text);
+}
+
+.daily-list {
+    list-style: none;
+}
+
+.day {
+    width: 8em;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature p {
+    margin: 0;
+    padding: 2px;
+}
+
+.upper-temperature::after {
+    content: "°";
+}
+
+.lower-temperature::after {
+    content: "°";
+    color: var(--light-text);
+}
+
+.lower-temperature {
+    color: var(--light-text);
+}
+
+.weather-image {
+    width: 50px;
+    height: 50px;
+}
+
+.pollen::before {
+    content: "Pollen ";
+    color: var(--light-text);
+}

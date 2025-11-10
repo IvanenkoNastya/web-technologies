@@ -1,0 +1,43 @@
+.navigation-list .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-letter {
+    padding: 8px;
+    background: var(--text-bg-dark-color);
+}
+
+.icon-letter a {
+    color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    padding: 10px 30px;
+    gap: 2px;
+
+    background: white;
+    border: 1px solid white;
+
+    list-style: none;
+}
+
+.item:hover {
+    background: var(--action-color);
+    border: 1px solid var(--text-bg-dark-color);
+}
+
+
+.navigation-favourite-item {
+    width: 24px;
+    padding: 10px;
+    background: var(--action-color);
+}
+
+.navigation-favourite-item:hover {
+    padding: 10px;
+    background: var(--hover-color);
+}
