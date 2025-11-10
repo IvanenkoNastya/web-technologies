@@ -1,0 +1,11 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.circle {
+    border-radius: 50%;
+}
