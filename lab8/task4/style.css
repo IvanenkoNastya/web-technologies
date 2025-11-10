@@ -33,18 +33,9 @@ a {
     }
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 55%;
-    padding: 40px 10%;
-}
 
 .about-us-container {
     background-color: var(--light-bg-color);
-    width: 100%;
     padding: 36px 10%;
     margin: 24px 10px;
     color: var(--text-bg-dark-color);
@@ -130,11 +121,29 @@ a {
 }
 
 .footer-container {
+    display: flex;
+    flex-direction: column;
+
     background-color: var(--text-bg-dark-color);
-    width: 100%;
     padding: 36px 10%;
     margin: 24px 10px;
     color: var(--light-bg-color);
+}
+
+.copyright {
+    align-self: center;
+}
+
+.socials {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.socials a {
+    margin: 10px;
+    padding: 10px;
 }
 
 .copyright::before {
@@ -142,21 +151,18 @@ a {
 }
 
 .email {
-    display: inline-block;
     background: darkorange;
     width: 30px;
     height: 30px;
 }
 
 .phone {
-    display: inline-block;
     background: darkred;
     width: 30px;
     height: 30px;
 }
 
 .youtube {
-    display: inline-block;
     background: darkslateblue;
     width: 30px;
     height: 30px;

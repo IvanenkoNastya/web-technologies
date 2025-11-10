@@ -1,9 +1,3 @@
-.card-journal-image {
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-}
-
 .journal-cards-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -12,9 +6,7 @@
 
 .card-journal {
     display: flex;
-    /*gap: 5px;*/
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: row;
 
     width: 500px;
     height: 300px;
@@ -24,7 +16,12 @@
 .journal-text-wrapper {
     display: flex;
     flex-flow: column wrap;
-    gap: 0;
+}
+
+.card-journal-image {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
 }
 
 .journal-cards-wrapper .date {
