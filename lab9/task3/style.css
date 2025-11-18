@@ -1,3 +1,15 @@
+@media (max-width: 576px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: darkslateblue;
+    }
+}
+
 .grid-container {
     display: grid;
     grid-gap: 50px;
@@ -5,7 +17,6 @@
     width: 576px;
     margin: 0 auto;
 }
-
 
 .item {
     min-width: 100px;
@@ -33,6 +44,7 @@
     background-repeat: no-repeat;
     background-size: 600px 450px;
 }
+
 
 .img1 {
     grid-column: 1;
