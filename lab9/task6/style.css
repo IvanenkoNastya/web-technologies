@@ -1,0 +1,46 @@
+body {
+    counter-reset: section;
+}
+
+.wrapper {
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    width: 768px;
+    margin: 0 auto;
+    padding: 10px;
+    /*justify-items: center;*/
+}
+
+.counted {
+    background-color: gold;
+    padding: 10px 20px;
+}
+
+.counted::before {
+    counter-increment: section;
+    content: counter(section) "";
+}
+
+.row1 {
+    grid-column: span 12;
+}
+
+.row2 {
+    grid-column: span 6;
+}
+
+.row3 {
+    grid-column: span 4;
+}
+
+.row4 {
+    grid-column: span 3;
+}
+
+.row5 {
+    grid-column: span 2;
+}
