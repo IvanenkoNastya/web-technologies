@@ -4,12 +4,16 @@
     grid-gap: 20px;
 
     width: 620px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .item {
     padding: 10px;
     box-shadow: 1px 0 5px grey;
+}
+
+.item:hover {
+    box-shadow: 2px 1px 10px grey;
 }
 
 .image {
@@ -39,6 +43,12 @@
     background-color: grey;
     color: white;
     border: none;
+}
+
+.button:hover {
+    background-color: lightgray;
+    color: grey;
+
 }
 
 .large-item {
