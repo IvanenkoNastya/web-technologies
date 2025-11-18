@@ -15,8 +15,7 @@
     grid-gap: 10px;
     grid-template-columns: repeat(5, 200px);
     grid-template-rows: 200px 250px 200px;
-    /*grid-template: repeat(3, 200px) / 1fr 8fr 1fr;*/
-    width: 576px;
+    width: max-content;
     margin: 0 auto;
 }
 
