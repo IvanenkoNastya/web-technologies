@@ -1,22 +1,33 @@
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     body {
         background-color: lightgreen;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
     body {
-        background-color: darkslateblue;
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(5, 200px);
+        grid-template-rows: 200px 250px 200px;
+        width: max-content;
+        margin: 0 auto;
     }
 }
 
 .grid-container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: 200px 250px 200px;
-    width: max-content;
-    margin: 0 auto;
+    /*grid-template-columns: repeat(5, 200px);*/
+    /*grid-template-rows: 200px 250px 200px;*/
+    /*width: max-content;*/
+    /*margin: 0 auto;*/
 }
 
 .item {
