@@ -1,3 +1,5 @@
+'use strict';
+
 let isHello = false;
 
 function mouseLeftMyButton() {
