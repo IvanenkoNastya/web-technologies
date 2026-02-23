@@ -15,18 +15,36 @@ function executeTask2() {
         left = right;
         right = tmp;
     }
-
     let result = false;
     if (inputNumber >= left && inputNumber <= right) {
         result = !result;
     }
-
     console.log(inputNumber + ' is within the boundaries (' + left + ',' + right + ')? ' + result);
     return result;
 }
 
 function executeTask3() {
-
+    let mark = readNumber();
+    let theAnswer = 'no info';
+    if (mark < 0 || mark > 100) {
+        theAnswer = 'error';
+    } else {
+        if (mark < 34) {
+            theAnswer = 'F, Fail'
+        } else if (mark < 59) {
+            theAnswer = 'FX, Fail'
+        } else if (mark < 63) {
+            theAnswer = 'E, Satistifactory'
+        } else if (mark < 73) {
+            theAnswer = 'E, Satistifactory'
+        } else if (mark < 81) {
+            theAnswer = 'C, Good'
+        } else {
+            theAnswer = mark < 89 ? 'B, Good' : 'A, Exellent';
+        }
+    }
+    console.log(mark + ': ' + theAnswer);
+    return theAnswer;
 }
 
 function readNumber() {
