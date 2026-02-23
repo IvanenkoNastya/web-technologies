@@ -1,6 +1,5 @@
 let isHello = false;
 
-
 function mouseLeftMyButton() {
     let elemToChange = document.getElementsByTagName('div')[0];
     console.error(elemToChange.innerHTML + ' Anastasiia Ivanenko');
