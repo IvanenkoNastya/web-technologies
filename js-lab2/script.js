@@ -1,3 +1,5 @@
+'use strict';
+
 function executeTask1() {
     let inputArray = readArray();
     let result = getMaxAndMin(inputArray);
@@ -54,22 +56,18 @@ function readNumber() {
 
 function readTwoNumbers() {
     let arrayStr = prompt('Input 2 numbers separating them by comma (,):', '0,0');
-    let array = arrayStr.split(',');
-    return array;
+    return arrayStr.split(',');
 }
 
 function readArray() {
     let arrayStr = prompt('Input numbers separating them by comma (,):', '0');
-    let array = arrayStr.split(',');
-    return array;
+    return arrayStr.split(',');
 }
 
 function getMaxAndMin(array) {
-    console.log('hello2');
     let min = +array[0];
     let max = +array[0];
     for (let i = 0; i < array.length; i++) {
-        console.log('for');
         let value = +array[i];
         if (value > max) {
             max = value;
