@@ -1,15 +1,46 @@
 'use strict';
 
-function executeTask1() {
-    let inputArray = readArray();
-    let result = getMaxAndMin(inputArray);
+// task 1
+
+//let arrayOfNumbers = [23, 12, 2, 55, 18];
+let arrayOfNumbers = [2, 2, 2, 2];
+
+function findMaxAndMin(array) {
+    let min = +array[0];
+    let max = +array[0];
+    for (let i = 0; i < array.length; i++) {
+        let value = +array[i];
+        if (value > max) {
+            max = value;
+        }
+        if (value < min) {
+            min = value;
+        }
+    }
+    let result = '';
+    if (areObjectsEqual(min, max)) {
+        result = 'min = max = ' + min;
+    } else {
+        result = 'min: ' + min + ', max: ' + max;
+    }
     console.log(result);
     return result;
 }
 
-function executeTask2() {
-    let inputNumber = readNumber();
-    let boundaries = readTwoNumbers();
+function areObjectsEqual(first, second) {
+    if (typeof first === typeof  second && first - second === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// task 2
+
+let someNumber = 5;
+let someBoundaries = [1, 8];
+
+function isInside(number, boundaries) {
     let left = boundaries[0];
     let right = boundaries[1];
     if (left > right) {
@@ -18,15 +49,18 @@ function executeTask2() {
         right = tmp;
     }
     let result = false;
-    if (inputNumber >= left && inputNumber <= right) {
+    if (number >= left && number <= right) {
         result = !result;
     }
-    console.log(inputNumber + ' is within the boundaries (' + left + ',' + right + ')? ' + result);
+    console.log('Is number' + number + ' within the boundaries (' + left + ',' + right + ')? ' + result);
     return result;
 }
 
-function executeTask3() {
-    let mark = readNumber();
+// task 3
+
+let studentMark = 88;
+
+function nameTheMark(mark) {
     let theAnswer = 'no info';
     if (mark < 0 || mark > 100) {
         theAnswer = 'error';
@@ -49,7 +83,7 @@ function executeTask3() {
     return theAnswer;
 }
 
-function readNumber() {
+/*function readNumber() {
     let numberStr = prompt('Input one number:', '0');
     return +numberStr;
 }
@@ -62,9 +96,9 @@ function readTwoNumbers() {
 function readArray() {
     let arrayStr = prompt('Input numbers separating them by comma (,):', '0');
     return arrayStr.split(',');
-}
+}*/
 
-function getMaxAndMin(array) {
+/*function getMaxAndMin(array) {
     let min = +array[0];
     let max = +array[0];
     for (let i = 0; i < array.length; i++) {
@@ -77,5 +111,6 @@ function getMaxAndMin(array) {
         }
     }
     return { min , max };
-}
+}*/
+
 
