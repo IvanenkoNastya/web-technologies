@@ -52,7 +52,7 @@ function isInside(number, boundaries) {
     if (number >= left && number <= right) {
         result = !result;
     }
-    console.log('Is number' + number + ' within the boundaries (' + left + ',' + right + ')? ' + result);
+    console.log('Is number ' + number + ' within the boundaries (' + left + ',' + right + ')? ' + result);
     return result;
 }
 
