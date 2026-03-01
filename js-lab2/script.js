@@ -28,7 +28,7 @@ function findMaxAndMin(array) {
 }
 
 function areObjectsEqual(first, second) {
-    if (typeof first === typeof  second && first - second === 0) {
+    if (typeof first === typeof second && first - second === 0) {
         return true;
     } else {
         return false;
@@ -83,34 +83,33 @@ function nameTheMark(mark) {
     return theAnswer;
 }
 
-/*function readNumber() {
-    let numberStr = prompt('Input one number:', '0');
-    return +numberStr;
-}
+// task 3 - part 2
 
-function readTwoNumbers() {
-    let arrayStr = prompt('Input 2 numbers separating them by comma (,):', '0,0');
-    return arrayStr.split(',');
-}
+let someMonth = 4;
 
-function readArray() {
-    let arrayStr = prompt('Input numbers separating them by comma (,):', '0');
-    return arrayStr.split(',');
-}*/
+function nameTheSeason(month) {
+    let season = "n/a"
 
-/*function getMaxAndMin(array) {
-    let min = +array[0];
-    let max = +array[0];
-    for (let i = 0; i < array.length; i++) {
-        let value = +array[i];
-        if (value > max) {
-            max = value;
-        }
-        if (value < min) {
-            min = value;
+    if (month > 0) {
+        if (month <= 13) {
+            if (month < 3 || month === 12) {
+                season = "Winter";
+            }
+            if (month > 2) {
+                if (month < 6) {
+                    season = "Spring";
+                }
+            }
+            if (month >= 6) {
+                if (month <= 8) {
+                    season = "Summer";
+                }
+            }
+            if (month === 9 || month === 10 || month === 11) {
+                season = "Autumn";
+            }
         }
     }
-    return { min , max };
-}*/
-
-
+    console.log('month: ' + month + ', season : ' + season);
+    return season;
+}
