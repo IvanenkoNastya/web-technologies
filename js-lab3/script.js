@@ -9,7 +9,7 @@ function printMessage(message) {
 // task 1
 
 function getSumOfFirstNNumbers(number) {
-    let sum = 0;
+   let sum = 0;
     let i = 0;
     while (i < number) {
         sum += i;
@@ -34,7 +34,6 @@ function getFactorial(number) {
 
 function getMonths(number) {
     let res = "something is wrong";
-
     switch (number) {
         case 1:
             res = "January";
@@ -105,7 +104,6 @@ function getArrayStr(array) {
     //printMessage(message);
     return message;
 }
-
 
 // task 5
 
